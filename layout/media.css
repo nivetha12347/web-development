@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: orange;
+}
+h1{
+    color: aliceblue;
+    font-size: 10rem;
+}
+@media(max-width:400px){
+    body{
+        background-color: aqua;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
+@media(min-width:401px) and (max-width:900px){
+    body{
+        background-color: blueviolet;
+    }
+    h1{
+font-size: 5rem;
+    }
+} */
+@media all and (max-width:500px) and (orientation:landscape ){
+ body{
+    background-color:palevioletred;
+ }
+}
+
+@media(max-width:500px) and (orientation:portrait ){
+ body{
+    background-color: chartreuse;
+ }
+}

@@ -1,0 +1,7 @@
+img{
+    width: 400px;
+    height: 400px;
+    padding: 100px;
+    background-color: aqua;
+    box-sizing: border-box;
+}

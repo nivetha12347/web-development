@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite IE", cursive;
+}
+
+aside {
+    background-image: linear-gradient(aqua, rgb(120, 120, 229), green);
+    width: 15%; /* Slightly wider for better text fit */
+    height: 100vh;
+}
+
+aside ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: black;
+}
+
+a:hover {
+    background-color: aqua;
+}
+
+/* Parent container for any submenu */
+#bf, .has-submenu {
+    position: relative;
+}
+
+/* Common style for all sub-menus */
+.submenu, .nested-menu {
+    list-style-type: none;
+    background-color: blueviolet;
+    position: absolute;
+    left: 100%; /* Pops it to the right side */
+    top: 0;
+    width: 150px; /* Fixed width looks cleaner */
+    display: none;
+}
+
+/* Show Breakfast menu on hover */
+#bf:hover > #bf-menu {
+    display: block;
+}
+
+/* Show Veg/Non-veg menus on hover */
+.has-submenu:hover > .nested-menu {
+    display: block;
+}
+
+/* Optional: Different color for nested levels to distinguish them */
+.nested-menu {
+    background-color: #6a5acd; 
+}

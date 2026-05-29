@@ -1,0 +1,23 @@
+h1{
+    font-size: 1em;
+    background-color: aqua;
+    width: 100cm;
+    
+}
+div{
+    font-size: 40px;
+    width: 600px;
+}
+html{
+    font-size: 100px;
+}
+#first{
+    font-size: 1em;
+    background-color: chartreuse;
+}
+
+#second{
+    font-size: 1em;
+    background-color: chocolate;
+    width: 10%;
+}

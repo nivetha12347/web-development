@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+}
+main,section,article,footer,div{
+    padding: 2rem;
+}
+main{
+    background-color: red;
+    margin-top: 100px;
+    position: relative;
+}
+section{
+    background-color: blue;
+    position: absolute;
+}
+article{
+    background-color: aquamarine;
+}
+footer{
+background-color: blueviolet;
+position: relative;
+}
+div{
+  background-color: chocolate;
+  position:absolute;
+  top: 0;
+  left: 0;
+}

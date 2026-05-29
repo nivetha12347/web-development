@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    height: 100vh;
+
+}
+main>section{
+   width: 40%;
+   background-color: white;
+   position: relative;
+   height: 70%;
+   transform-style: preserve-3d;
+   transition: 2s;
+}
+main>section:hover{
+    transform: rotateY(180deg);
+}
+div{
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotateY(180deg);
+}

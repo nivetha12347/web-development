@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div{
+    width:4rem ;
+    height: 4rem;
+    border-radius: 50%;
+    border: 10px solid black;
+   border-top:10px solid blue ;
+   animation-name: loading;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+         transform:rotate(360deg) ;
+    }
+}

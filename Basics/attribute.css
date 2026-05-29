@@ -1,0 +1,9 @@
+/* input[type]{
+color: aqua;
+} */
+input[type="text"]{
+color: red;
+}
+input[type="password"]{
+color: brown;
+}

@@ -1,0 +1,32 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(8,3rem);
+    grid-template-rows:repeat(8,3rem);
+    background-color: aqua;
+    height:100vh;
+    align-content:center;
+    justify-content: center;
+}
+.white{
+    background-color:rgb(179,162,131);
+}
+.black{
+    background-color: rgb(163, 108, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-solid{
+    font-size: 1.5rem;
+    color: red;
+}
+.fa-regular{
+    font-size: 1.5rem;
+    color:blue;
+}

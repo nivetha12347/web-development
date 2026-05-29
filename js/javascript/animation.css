@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    height:100vh;
+    background: linear-gradient(to right top,orangered,yellow);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.outerbox{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outerbox>.innerbox{
+    height: 100px;
+    width: 100px;
+    border-top:5px solid green;
+    border-radius: 50%;
+    animation:rotateBox 2s linear infinite;
+
+}
+@keyframes rotateBox {
+    from{
+        transform:rotate(0);
+    }
+    to{
+       transform:rotate(360deg);
+    }
+}
+
+.outerorbit{
+    height:300px;
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 50%;
+    animation: rotateBox 2s linear infinite;
+}
+.outerorbit > .innerorbit{
+    height:100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius:50%
+}
+.outerdiv{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+.outerdiv>.circle{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation: rotatecircle 3s linear infinite alternate;
+
+
+}
+@keyframes rotatecircle{
+    0%{
+       transform:translate(0,0);
+    }
+    25%{
+       transform:translate(300px,0);
+       background-color: blue;
+    }
+    50%{
+        transform:translate(300px,300px);
+        background-color: gray;
+    }
+   75%{
+       transform:translate(0,300px);
+       background-color: green;
+    }
+}
+
+nav{
+    height: 80px;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav>ul{
+    display: flex;
+    gap: 20px;
+
+}
+nav>ul>li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
+    letter-spacing: 1.4px;
+    cursor: pointer;
+}
+nav>ul>li:after{
+    content:"";
+    height: 4px;
+    width: 0;
+    border-radius: 4px;
+    background-color: orangered;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transition: all 1s ease-in;
+    
+
+}
+nav>ul>li:hover::after{
+    width: 100%;
+    
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Login</title>
+    <link rel="stylesheet" href="./netflix.css">
+    <link rel="shortcut icon" href="./image/netflix icon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="background-overlay"></div>
+
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+
+    </div>
+
+    <div class="login-container">
+        <h1>Enter your info to sign in</h1>
+        <p class="subtitle">Or get started with a new account.</p>
+
+        <form>
+            <div class="input-group">
+                <input type="text" id="email" required>
+                <label for="email">Email or mobile number</label>
+            </div>
+            <button type="submit" class="btn-continue">Continue</button>
+        </form>
+
+        <div class="help-section">
+            <details>
+                <summary>Get Help</summary>
+                <div class="help-content">
+                    <a href="#">Forgot email or mobile number?</a>
+                    <a href="#">Learn more about sign-in</a>
+                </div>
+            </details>
+        </div>
+
+        <p class="recaptcha-text">
+            This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+            <a href="#">Learn more</a>
+        </p>
+    </div>
+</body>
+</html>

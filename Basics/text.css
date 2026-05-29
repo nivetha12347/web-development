@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+#CSK{
+    font-size:50px ;
+    font-weight: 200;
+    font-family: "Oswald", sans-serif;
+    color: yellow;
+    text-transform: capitalize;
+    text-align: left;
+    text-decoration: line-through;
+    letter-spacing: 20px;
+}
+#MI{
+    font-size:50px ;
+    font-weight: 200;
+    font-family: "Bitcount Prop Double Ink", system-ui;
+    color: rgb(66, 30, 210);
+    text-transform:lowercase;
+    text-align: right;
+    text-decoration: underline;
+    letter-spacing: 10px;
+    word-spacing: 50px;
+}
+#RCB{
+    font-size: 50px;
+    font-weight:200;
+    font-family: "Anton", sans-serif;
+    color: darkred;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: double;
+    word-spacing: 50px;
+}
+p{
+    line-height: 50px;
+    text-wrap: nowrap; 
+    width:400px
+    background-color: aqua; 
+    text-overflow:ellipsis ;
+    overflow: scroll; /* text overflow if it is hidden the overflow text will be hidden otherwise that is ellipsis mean it show the overflow text*/
+    
+}   /* text-wrap-->text not display in next line ,by default it is wrap the text will move to next line */
+
+p:hover{
+text-wrap: wrap
+}

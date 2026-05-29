@@ -1,0 +1,37 @@
+.fa-solid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: race;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 5s; */
+}
+div{
+    position: relative;
+    height: 1rem;
+}
+@keyframes race{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 98%;
+        right: 45%;
+    }
+}
+.fa-car-side{
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+}
+.fa-car-rear{
+    animation-timing-function: ease-out;
+}
+.fa-motorcycle{
+     animation-timing-function:ease-in-out;
+     animation-direction: alternate;
+}
+.fa-person-biking{
+    animation-timing-function:linear;
+    animation-direction: reverse;
+}

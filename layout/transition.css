@@ -1,0 +1,16 @@
+h1{
+    color: blueviolet;
+    font-size: 1rem;
+    background-color:rgb(228, 125, 142);
+    transition-property:all;
+    transition-duration: 2s;
+    transition-delay: 5s;
+    transition-timing-function: ease-in;
+    border: 10px solid grey;
+}
+h1:hover{
+    color: black;
+    background-color: aqua;
+    font-size: 1rem;
+    border: 10px solid blue;
+}

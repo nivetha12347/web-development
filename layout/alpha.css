@@ -1,0 +1,127 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section with Background */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('your-image-path.jpg'); /* Inga un image path-a kudu */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Navigation Bar */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo { font-size: 24px; font-weight: bold; }
+.logo span { font-weight: normal; font-size: 14px; opacity: 0.7; }
+
+nav ul { list-style: none; display: flex; align-items: center; }
+nav ul li { position: relative; margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-size: 16px; }
+
+/* Dropdown Menu styling */
+/* Pathaiya irukura dropdown related styles-a remove pannitu ithea replace panniko */
+
+/* Dropdown Menu styling */
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    padding: 0;
+    list-style: none;
+    border-radius: 4px;
+    z-index: 999;
+}
+
+/* Ella menu items hover effect */
+.dropdown-content li {
+    position: relative; /* Submenu position aaga ithu mukkiyam */
+}
+
+.dropdown-content li a {
+    color: #444;
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+}
+
+/* HOVER COLOR FOR ALL: Generic, Contact, Elements, Submenu, and Options */
+.dropdown-content li:hover > a {
+    background-color: #e89980; /* Orange color */
+    color: white !important;
+}
+
+/* SUBMENU POSITIONING */
+.submenu-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -180px; /* Layout-ku left side-la vara mari set panniruken */
+    min-width: 180px;
+    background-color: white;
+    box-shadow: -5px 8px 16px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 0;
+    border-radius: 4px;
+}
+
+/* SHOW ON HOVER */
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+.has-submenu:hover > .submenu-content {
+    display: block;
+}
+
+/* Gap illama iruka ithu help pannum */
+.has-submenu {
+    cursor: pointer;
+}verticalnav
+
+/* Hero Content */
+.hero-content h1 { font-size: 80px; font-weight: 300; margin-bottom: 10px; }
+.hero-content p { font-size: 20px; margin-bottom: 30px; opacity: 0.9; }
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.btn-white { background: white; color: #333; }
+.btn-outline { border: 2px solid white; color: white; }
+.signup-btn { border: 1px solid white; padding: 5px 15px; border-radius: 5px; }

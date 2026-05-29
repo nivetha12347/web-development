@@ -1,0 +1,32 @@
+/* :root{
+     --bg:rgb(216, 19, 19);
+     --jk:pink;
+     --mi:blue;
+     --csk:yellow;
+}
+h1{
+    --any:green;
+    --font:5rem;
+    background-color:var(--any);
+    font-size: var(--font);
+    color: var(--bg);
+}
+button{
+    background-color: var(--bg);
+    color: var(--csk);
+}
+p{
+   background-color: var(--jk);
+   color: var(--mi);
+} */
+
+h1{
+color: #d50d0d
+}
+p{
+color: rgba(0, 0, 255,0.5);
+}
+button{
+ color: hsl(57, 84%, 47%);
+
+}

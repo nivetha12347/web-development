@@ -1,0 +1,47 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.section>h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+
+}
+#s1{
+    background-image: url(./iron1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+}
+#s2{
+    background-image: url(./captain\ america.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+}
+#s3{
+    background-image: url(./thor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+}
+#s4{
+    background-image: url(./HD-wallpaper-hulk-top-35-best-hulk-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+}

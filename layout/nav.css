@@ -1,0 +1,26 @@
+/* *{
+    margin:0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+}
+div{
+    display: flex;
+     gap: 20px; 
+}
+aside{
+    display: flex;
+} */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 20px;
+}
+aside{
+    display: flex;
+    gap: 20px;
+}

@@ -1,0 +1,47 @@
+/* body{
+    animation-name: disco;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes disco{
+    0%{
+        background-color: aqua;
+    }
+    25%{
+        background-color: black;
+    }
+    50%{
+        background-color: bisque;
+    }
+    75%{
+        background-color: blueviolet;
+    }
+    100%{
+        background-color: brown;
+    }
+} */
+
+body{
+    animation-name: disco;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes disco{
+    0%{
+       background-image: url(./image/surya.jpg);
+    }
+    25%{
+        background-image: url(./image/ajith.jpg);
+    }
+    50%{
+       background-image: url(./image/virat.jpg);
+    }
+    75%{
+       background-image: url(./image/virat1.jpg);
+    }
+    100%{
+        background-image: url(./image/surya1.jpg);
+}
+}

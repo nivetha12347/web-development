@@ -1,0 +1,63 @@
+/* h1{
+    background-color: aqua;
+    display: inline;
+    width: 500px;  // inline element cannot use this width we cannot customize  ,inline allow other content in same line 
+}
+a{
+    background-color: blueviolet;
+    display: inline-block;
+    width: 200px;
+}
+button{
+    background-color: brown;
+    display: block;
+    width: 150px;
+}
+h5{
+    display: none; // content in h5 i didnt want to display initially , later i need to display mean we use display as none ,remove the content
+} 
+    if we provide flex then only justify will work otherwise not work,flex will control only children not grandchildren
+    
+
+*/
+
+
+/* div{
+    display: flex;
+    justify-content: center;   
+} */
+
+
+header{
+    background-color: aquamarine;
+    color:rgb(255, 157, 0);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav{
+    background-color: chartreuse;
+    color: blue;
+    display: flex;
+    justify-content: end;
+    gap:20px;
+    padding: 20px;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: brown;
+}
+main{
+    background-color: burlywood;
+    color: rgb(118, 72, 161);
+    display: flex;
+    justify-content: center;
+
+}
+ul{
+    display: flex;
+    gap:20px;
+    list-style-type: none;
+}

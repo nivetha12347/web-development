@@ -1,0 +1,136 @@
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 37%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+    
+    --font-inter: "Inter", sans-serif;
+    --font-lexend: "Lexend Deca", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: var(--font-inter);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card Container */
+.card {
+    background-color: var(--dark-desaturated-blue);
+    display: flex;
+    flex-direction: column; /* Mobile-la image mela, content kila */
+    max-width: 327px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Image Section */
+.image-container {
+    background-color: var(--soft-violet);
+    background-image: url('./images/image-header-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply; /* Ithu thaan antha purple tint-ah tharum */
+    height: 240px;
+}
+
+/* Content Section */
+.content-container {
+    padding: 40px 32px;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: var(--soft-violet);
+}
+
+header p {
+    color: var(--main-paragraph);
+    line-height: 1.6;
+    font-size: 0.9375rem;
+    margin-bottom: 40px;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.stat-item h3 {
+    font-size: 1.5rem;
+}
+
+.stat-item p {
+    color: var(--stat-headings);
+    font-family: var(--font-lexend);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 1110px) {
+    .card {
+        flex-direction: row-reverse; /* Image right side-la vara */
+        max-width: 1110px;
+        text-align: left;
+    }
+
+    .image-container {
+        width: 50%;
+        height: auto;
+        background-image: url('./images/image-header-desktop.jpg');
+    }
+
+    .content-container {
+        width: 50%;
+        padding: 70px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    header p {
+        margin-bottom: 70px;
+        padding-right: 40px;
+    }
+
+    .stats {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 40px;
+    }
+}
+
+/* Attribution */
+.attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }

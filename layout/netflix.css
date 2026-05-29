@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    /* Netflix classic background */
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bca1-07e3f8eb1468/a248962d-053c-4a1f-af9a-35639bfe44d2/IN-en-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+
+/* Background overlay to make it look dark */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header {
+    width: 100%;
+    padding: 25px 200px; /* left/right increase pannom */
+    z-index: 2;
+}
+
+.header-border {
+    border-bottom: 1px solid #454545; /* Intha line thaan logo-ku kila theriyum */
+    width: 100%;
+    padding: 20px 50px; /* Logo-vum line-um romba ottama irukka gap */
+    background: rgba(0, 0, 0, 0.4); /* Header-ku mattum chinna dark tint */
+    margin-bottom: 30px; /* Login box-kum line-kum gap */
+}
+
+.logo {
+    width: 160px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.75); /* Semi-transparent box */
+    border-radius: 4px;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #efefef;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+}
+
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8c8c8c;
+    transition: 0.1s ease all;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: 10px;
+    font-size: 0.75rem;
+}
+
+.btn-continue {
+    width: 100%;
+    padding: 15px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.help-section {
+    margin-top: 15px;
+}
+
+summary {
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+summary::after {
+    content: ' ⌵'; /* Down arrow */
+}
+
+.help-content a {
+    display: block;
+    color: #b3b3b3;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.help-content a:hover {
+    text-decoration: underline;
+}
+
+.recaptcha-text {
+    font-size: 0.8rem;
+    color: #8c8c8c;
+    margin-top: 30px;
+}
